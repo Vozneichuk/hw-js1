@@ -9,7 +9,7 @@ function convert(amount){
 //TASK 2
 
 function reverse(str){
-	const reverseStr = str.slice('').reverse()
+	const reverseStr = str.split('').reverse()
 	return `${reverseStr} reversed string`
 }
 
@@ -21,34 +21,33 @@ function printStairs(n){
 	for(let i=0; i<n; i++){
 	console.log(stair+='#');
 } 
+}
+
 
 
 //TASK 4
 
-function sumRange(start, end){
+function sunRange(start, end) {
 
-	let sum= -1;
+	let sum = 0;
 
-    for ( let i =0; i<=end; i++){
+	for (i = start; i <= end; i++) {
+			sum += i;
+	}
 
-         sum += i;
-    
-}
-
-return sum;
-
+	return sum;
 }
 
 
 //TASK5
 
 function min(a,b,c){
-    if(a<b && a<c){
-        return a;
-        }else if(b<a && b<c){
-		return b;
-		}else { 
-			return c;
+	if(a<=b && a<=c){
+			return a;
+			}else if(b<=a && b<=c){
+	return b;
+	}else { 
+		return c;
 }
 }
 
