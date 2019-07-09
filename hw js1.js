@@ -88,7 +88,7 @@ function toUppercase(str) {
       switch(arr[i]){
         case 'q':
           arr[i] = "Q";
-            break;
+          break;
         case 'w':
 					arr[i] = "W";
 					break;
